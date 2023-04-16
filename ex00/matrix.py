@@ -94,14 +94,14 @@ class Matrix():
 if __name__ == '__main__':
     import numpy as np
     
-    print("Vector------------------------ Add ------------------------------\n")
+    print("----------------------- Vector -----------------------------\n")
     
-    u = Vector([0, 0])
-    v = Vector([0, 0])
+    u = Vector([2, 3])
+    v = Vector([5, 7])
     U = u.data
     u.add(v)
-    print(f"Vector --- '[0, 0]' and '[0, 0]' --- my add ------ give --- {u.data}")
-    print(f"Vector --- '[0, 0]' and '[0, 0]' --- numpy add --- give --- {np.add(U, v.data)}\n")
+    print(f"[2, 3]' and '[5, 7]': custom add: {u.data}")
+    print(f"[2, 3]' and '[5, 7]': numpy add: {np.add(U, v.data)}\n")
 
     u = Vector([1, 0])
     v = Vector([0, 1])
